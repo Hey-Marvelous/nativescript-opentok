@@ -1,8 +1,8 @@
-import { Observable, fromObject } from 'tns-core-modules/data/observable';
-import { topmost } from 'tns-core-modules/ui/frame';
-import { View, layout } from 'tns-core-modules/ui/core/view';
+import { Observable, fromObject } from '@nativescript/core/data/observable';
+import { topmost } from '@nativescript/core/ui/frame';
+import { View, layout } from '@nativescript/core/ui/core/view';
 import { TNSOTSession } from './session';
-import * as utils from 'tns-core-modules/utils/utils';
+import * as utils from '@nativescript/core/utils/utils';
 declare var OTPublisher: any,
     interop: any,
     OTPublisherKitDelegate: any,

@@ -1,7 +1,7 @@
-import { Observable, fromObject } from 'tns-core-modules/data/observable';
-import { topmost } from 'tns-core-modules/ui/frame';
-import { screen } from 'tns-core-modules/platform';
-import { View, layout } from 'tns-core-modules/ui/core/view';
+import { Observable, fromObject } from '@nativescript/core/data/observable';
+import { topmost } from '@nativescript/core/ui/frame';
+import { screen } from '@nativescript/core/platform';
+import { View, layout } from '@nativescript/core/ui/core/view';
 import { TNSOTSession } from './session';
 import { TNSOTPublisher } from './publisher';
 

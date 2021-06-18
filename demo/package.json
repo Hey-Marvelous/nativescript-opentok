@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "nativescript-opentok": "file:..",
-    "tns-core-modules": "^3.0.0"
+    "@nativescript/core": "~8.0.7"
   },
   "devDependencies": {
     "babel-traverse": "6.7.6",

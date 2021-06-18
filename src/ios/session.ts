@@ -1,5 +1,5 @@
-import { Observable, fromObject } from 'tns-core-modules/data/observable';
-import { topmost } from 'tns-core-modules/ui/frame';
+import { Observable, fromObject } from '@nativescript/core/data/observable';
+import { topmost } from '@nativescript/core/ui/frame';
 import { TNSOTPublisher } from './publisher';
 import { TNSOTSubscriber } from './subscriber';
 

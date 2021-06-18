@@ -1,5 +1,5 @@
 import { Observable, fromObject } from "data/observable";
-import { ContentView } from 'tns-core-modules/ui/content-view';
+import { ContentView } from '@nativescript/core/ui/content-view';
 import { TNSOTSession } from "./session";
 import { RENDERSTYLE } from "../common";
 import {
@@ -7,7 +7,7 @@ import {
     View,
     CssProperty,
     Style
-} from "tns-core-modules/ui/core/view";
+} from "@nativescript/core/ui/core/view";
 declare var com: any, android: any;
 const StreamListener = com.opentok.android.SubscriberKit.StreamListener;
 const SubscriberListener = com.opentok.android.SubscriberKit.SubscriberListener;

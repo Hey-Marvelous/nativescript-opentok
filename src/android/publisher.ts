@@ -1,7 +1,7 @@
-import * as  utils from "tns-core-modules/utils/utils";
-import * as app from 'tns-core-modules/application';
-import { View, CssProperty, Style } from 'tns-core-modules/ui/core/view'
-import { Observable, fromObject } from "tns-core-modules/data/observable";
+import * as  utils from "@nativescript/core/utils/utils";
+import * as app from '@nativescript/core/application';
+import { View, CssProperty, Style } from '@nativescript/core/ui/core/view'
+import { Observable, fromObject } from "@nativescript/core/data/observable";
 import { TNSOTSession } from "./session";
 import { RENDERSTYLE } from "../common";
 declare var com: any, android: any;

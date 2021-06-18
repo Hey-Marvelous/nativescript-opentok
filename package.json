@@ -49,7 +49,7 @@
   "homepage": "https://github.com/sean-perkins/nativescript-opentok",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "tns-core-modules": "^3.0.0",
+    "@nativescript/core": "~8.0.7",
     "tns-platform-declarations": "^3.0.0",
     "typescript": "^2.2.0"
   },

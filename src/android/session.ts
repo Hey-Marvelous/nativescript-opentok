@@ -1,8 +1,8 @@
 import { TNSOTSessionI } from '../common';
 import { TNSOTPublisher } from './publisher';
 import * as app from 'application';
-import { Observable, fromObject } from 'tns-core-modules/data/observable';
-import * as utils from "tns-core-modules/utils/utils";
+import { Observable, fromObject } from '@nativescript/core/data/observable';
+import * as utils from "@nativescript/core/utils/utils";
 declare var com: any, android: any;
 const Session = com.opentok.android.Session;
 const Subscriber = com.opentok.android.Subscriber;
