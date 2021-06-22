@@ -11,7 +11,6 @@ declare var OTPublisher: any,
     AVCaptureDevicePositionBack: any,
     AVCaptureDevicePositionFront: any;
 
-@NativeClass()
 export class TNSOTPublisher extends View {
     private _ios: any = {};
     nativeView: UIView;

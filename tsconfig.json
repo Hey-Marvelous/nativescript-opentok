@@ -1,26 +1,5 @@
 {
-    "compilerOptions": {
-      "target": "ES2017",
-      "module": "esnext",
-      "moduleResolution": "node",
-      "lib": ["dom", "es2017"],
-      "sourceMap": true,
-      "noEmitHelpers": true,
-      "importHelpers": true,
-      "baseUrl": ".",
-      "paths": {
-        "~/*": ["app/*"],
-        "@/*": ["app/*"]
-      },
-      "typeRoots": ["types"],
-      "types": ["node"],
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "skipLibCheck": true
-    },
-    "include": ["app", "types"],
-    "exclude": ["node_modules", "platforms"]
-  }
-  
+	"extends": "tsconfig.base.json",
+	"exclude": ["node_modules", "demo", "platforms"],
+	"include": ["**/*.ts", "references.d.ts"]
+}

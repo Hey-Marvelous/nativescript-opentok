@@ -12,7 +12,7 @@ declare var OTSubscriber: any,
     CGRectMake: any;
 
 
-@NativeClass()
+
 export class TNSOTSubscriber extends View {
     private _subscriberKitDelegate: any;
     private _ios: any;
