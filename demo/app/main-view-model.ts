@@ -1,5 +1,5 @@
 import * as frame from 'ui/frame';
-import {Observable, EventData} from 'data/observable';
+import {Observable, EventData} from '@nativescript/core/data/observable';
 import {isAndroid, isIOS} from 'platform';
 import * as utils from "utils/utils";
 import {Page} from 'ui/page';

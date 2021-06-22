@@ -1,4 +1,4 @@
-import {EventData} from 'data/observable';
+import {EventData} from '@nativescript/core/data/observable';
 import {Page} from 'ui/page';
 import {isAndroid, isIOS} from 'platform';
 

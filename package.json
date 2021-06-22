@@ -1,6 +1,6 @@
 {
   "name": "nativescript-opentok",
-  "version": "2.0.1",
+  "version": "3.0.1",
   "description": "Integrates OpenTok for NativeScript.",
   "main": "opentok",
   "nativescript": {
@@ -35,7 +35,7 @@
     {
       "name": "Osei Fortune",
       "url": "https://github.com/triniwiz",
-      "email":"fortune.osei@yahoo.com"
+      "email": "fortune.osei@yahoo.com"
     }
   ],
   "author": {
@@ -50,13 +50,13 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "@nativescript/core": "~8.0.7",
-    "tns-platform-declarations": "^3.0.0",
-    "typescript": "^2.2.0"
+    "@nativescript/types": "~8.0.1",
+    "typescript": "^4.0.0"
   },
   "dependencies": {
-    "nativescript-permissions":"latest"
+    "nativescript-permissions": "latest"
   },
   "peerDependencies": {
-    "tns-core-modules": "3.0.0"
+    "@nativescript/core": "~8.0.7"
   }
 }

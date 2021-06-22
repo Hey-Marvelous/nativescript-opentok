@@ -1,4 +1,4 @@
-import { Observable } from 'data/observable';
+import { Observable } from '@nativescript/core/data/observable';
 export interface TNSOTSessionI {
     initSession(sessionId: string): Promise<any>;
     connect(token: string, config?: any): any;
