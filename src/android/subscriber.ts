@@ -21,6 +21,7 @@ const renderStyle = new CssProperty<Style, string>({
     valueConverter: (v: RENDERSTYLE) => { return String(v) }
 });
 
+@NativeClass()
 export class TNSOTSubscriber extends View {
     private _android: any;
     private _subscriber: any;

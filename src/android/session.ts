@@ -22,6 +22,7 @@ const currentapiVersion = android.os.Build.VERSION.SDK_INT;
 import { TNSOTSubscriber } from "./subscriber";
 import permissions = require('nativescript-permissions');
 
+@NativeClass()
 export class TNSOTSession {
     private apiKey: string;
     private config: any;

@@ -19,6 +19,7 @@ const renderStyle = new CssProperty<Style, string>({
     valueConverter: (v: RENDERSTYLE) => { return String(v) }
 });
 
+@NativeClass()
 export class TNSOTPublisher extends View {
     private _publisher: any;
     public static toggleVideoEvent = "toggleVideo";
