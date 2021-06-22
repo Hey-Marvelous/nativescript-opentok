@@ -1,4 +1,3 @@
-/// <reference path="./node_modules/@nativescript/types/index.d.ts" />
 import { Observable, fromObject } from '@nativescript/core/data/observable';
 import { topmost } from '@nativescript/core/ui/frame';
 import { TNSOTPublisher } from './publisher';
