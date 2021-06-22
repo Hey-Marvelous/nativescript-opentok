@@ -11,7 +11,8 @@ declare var OTPublisher: any,
     AVCaptureDevicePositionBack: any,
     AVCaptureDevicePositionFront: any;
 
-export class TNSOTPublisher extends View {
+@NativeClass()
+class TNSOTPublisher extends View {
     private _ios: any = {};
     nativeView: UIView;
     private _publisherKitDelegate: any;
@@ -139,6 +140,9 @@ export class TNSOTPublisher extends View {
 
 }
 
+export { TNSOTPublisher }
+
+@NativeClass()
 class TNSPublisherKitDelegateImpl extends NSObject {
 
     public static ObjCProtocols = [OTPublisherKitDelegate];
@@ -147,7 +151,7 @@ class TNSPublisherKitDelegateImpl extends NSObject {
     private _owner: WeakRef<any>;
 
     public static initWithOwner(owner: WeakRef<any>): TNSPublisherKitDelegateImpl {
-        let publisherKitDelegate = new TNSPublisherKitDelegateImpl();
+        let publisherKitDelegate = TNSPublisherKitDelegateImpl.new();
         publisherKitDelegate._events = new Observable();
         publisherKitDelegate._owner = owner;
         return publisherKitDelegate;

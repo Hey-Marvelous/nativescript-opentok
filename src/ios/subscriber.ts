@@ -12,8 +12,8 @@ declare var OTSubscriber: any,
     CGRectMake: any;
 
 
-
-export class TNSOTSubscriber extends View {
+@NativeClass()
+class TNSOTSubscriber extends View {
     private _subscriberKitDelegate: any;
     private _ios: any;
     nativeView: UIView;
@@ -71,7 +71,9 @@ export class TNSOTSubscriber extends View {
         return this._ios;
     }
 }
+export { TNSOTSubscriber }
 
+@NativeClass()
 class TNSSubscriberKitDelegateImpl extends NSObject {
 
     public static ObjCProtocols = [OTSubscriberKitDelegate];
@@ -80,7 +82,7 @@ class TNSSubscriberKitDelegateImpl extends NSObject {
     private _owner: WeakRef<any>;
 
     public static initWithOwner(owner: WeakRef<any>): TNSSubscriberKitDelegateImpl {
-        let subscriberKiDelegate = new TNSSubscriberKitDelegateImpl();
+        let subscriberKiDelegate = TNSSubscriberKitDelegateImpl.new();
         subscriberKiDelegate._events = new Observable();
         subscriberKiDelegate._owner = owner;
         return subscriberKiDelegate;

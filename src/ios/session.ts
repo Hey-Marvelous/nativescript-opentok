@@ -9,7 +9,7 @@ declare var OTSession: any,
     OTSessionErrorCode: any;
 
 @NativeClass()
-export class TNSOTSession extends NSObject {
+class TNSOTSession extends NSObject {
 
     public static ObjCProtocols = [OTSessionDelegate];
 
@@ -234,3 +234,5 @@ export class TNSOTSession extends NSObject {
     }
 
 }
+
+export { TNSOTSession }
